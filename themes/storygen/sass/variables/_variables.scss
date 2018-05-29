@@ -1,0 +1,111 @@
+/* Variables
+ * ===============
+ *
+ * All variables for main Storygen brand configured on this page. */
+
+
+/* Containers */
+
+$small-width: 600px;
+$medium-width: 800px;
+$large-width: 1000px;
+$xlarge-width: 1200px;
+
+/* Breakpoints */
+
+$mobile: $small-width;
+$desktop: $xlarge-width;
+
+/* Colour Scheme */
+
+$sg-white: #FFFFFF;
+$sg-black: #000000;
+
+$sg-purple: #1E0035;
+$sg-purple-lighter: lighten($sg-purple, 15%);
+$sg-purple-darker: darken($sg-purple, 15%);
+
+$sg-pink: #FF0051;
+$sg-pink-lighter: lighten($sg-pink, 15%);
+$sg-pink-darker: darken($sg-pink, 15%);
+
+$sg-yellow: #F18F01;
+$sg-yellow-lighter: lighten($sg-yellow, 15%);
+$sg-yellow-darker: darken($sg-yellow, 15%);
+
+$sg-blue: #048BA8;
+$sg-blue-lighter: lighten($sg-blue, 15%);
+$sg-blue-darker: darken($sg-blue, 15%);
+
+$sg-grey: #2E4057;
+$sg-grey-lighter: lighten($sg-grey, 15%);
+$sg-grey-darker: darken($sg-grey, 15%);
+
+/* Colour Config */
+
+$primary-colour: $sg-purple;
+$secondary-colour: $sg-blue;
+$accent-colour: $sg-pink;
+$text-colour: $sg-white;
+
+/* Typography */
+
+//Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Raleway|Roboto+Condensed:300,400);
+
+// Font Family Config
+$logo-font: 'Raleway', sans-serif;
+$header-font: 'Roboto Condensed', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+// Font sizes
+$logo-font-size: 48px;
+$h1-font-size:
+$h2-font-size:
+$h3-font-size:
+$h4-font-size:
+$h5-font-size:
+$h6-font-size:
+
+
+// Body font
+
+
+// Headings
+
+
+// Mobile heading font size
+
+
+// Heading font size
+
+
+/* Padding */
+
+
+/* Borders */
+
+
+
+/* Buttons */
+
+
+
+// Accent buttons
+
+
+// Muted Buttons
+
+
+// Round Buttons
+
+
+/* Forms */
+
+
+
+/* Tables */
+
+
+
+/* Code */

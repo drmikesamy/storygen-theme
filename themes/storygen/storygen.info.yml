@@ -1,0 +1,13 @@
+name: Storygen
+type: theme
+description: 'The base Storygen Media theme.'
+core: 8.x
+libraries:
+  - storygen/global
+base theme: classy
+stylesheets-remove:
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+  copyright: 'Copyright'
