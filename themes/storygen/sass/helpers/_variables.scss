@@ -1,0 +1,163 @@
+/* Variables
+ * ===============
+ *
+ * All variables for main Storygen brand configured on this page. */
+
+
+/* Containers */
+
+$small-width: 600px;
+$medium-width: 1000px;
+$large-width: 1000px;
+$xlarge-width: 1200px;
+
+/* Breakpoints */
+
+$mobile: $small-width;
+$desktop: $xlarge-width;
+
+/* Colour Scheme */
+
+$sg-white: #FFFFFF;
+$sg-black: #000000;
+
+$sg-purple: #1E0035;
+$sg-purple-lighter: lighten($sg-purple, 15%);
+$sg-purple-darker: darken($sg-purple, 15%);
+
+$sg-pink: lighten(#FF0051, 5%);
+$sg-pink-lighter: lighten($sg-pink, 15%);
+$sg-pink-darker: darken($sg-pink, 15%);
+
+$sg-yellow: #F18F01;
+$sg-yellow-lighter: lighten($sg-yellow, 15%);
+$sg-yellow-darker: darken($sg-yellow, 15%);
+
+$sg-blue: #048BA8;
+$sg-blue-lighter: lighten($sg-blue, 15%);
+$sg-blue-darker: darken($sg-blue, 15%);
+
+$sg-grey: #2E4057;
+$sg-grey-lighter: lighten($sg-grey, 15%);
+$sg-grey-darker: darken($sg-grey, 15%);
+
+/* Colour Config */
+
+$body-background-colour: $sg-white;
+$primary-colour: $sg-purple;
+$secondary-colour: $sg-blue-lighter;
+$accent-colour: $sg-pink;
+$text-colour: $sg-grey;
+
+/* Typography */
+
+//Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Open+Sans+Condensed:300,400,600|Raleway|Roboto+Condensed:300,400);
+
+// Font Family Config
+$logo-font: 'Raleway', sans-serif;
+$site-name-colour: $sg-white;
+$heading-font: 'Open Sans', sans-serif;
+$heading-font-weight: 400;
+$heading-colour: $sg-grey-lighter;
+$body-font: 'Open Sans', sans-serif;
+$body-font-weight: 400;
+$font-style: normal;
+$font-variant: normal;
+$font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+// Base Font Size
+$font-size: 1rem;
+$body-font-size: 1rem;
+$body-font-size-tablet: 1.1rem;
+$body-font-size-desktop: 1.1rem;
+$body-line-height: 1.6rem;
+
+//Mobile Heading Font Sizes
+$site-name-size: 3.5rem;
+$banner-headline-size: 2.9rem;
+$banner-tagline-size: 1.3rem;
+$h1: 1.75rem;
+$h2: 1.5rem;
+$h3: 1.25rem;
+$h4: 1.1rem;
+$h5: 1rem;
+$h6: 0.9rem;
+
+//Tablet Heading Font Sizes
+$site-name-size-tablet: 3.75rem;
+$banner-headline-size-tablet: 3rem;
+$banner-tagline-size-tablet: 1.5rem;
+$h1-tablet: 2rem;
+$h2-tablet: 1.75rem;
+$h3-tablet: 1.5rem;
+$h4-tablet: 1.25rem;
+$h5-tablet: 1.1rem;
+$h6-tablet: 1rem;
+
+//Desktop Heading Font Sizes
+$site-name-size-desktop: 4rem;
+$banner-headline-size-desktop: 3rem;
+$banner-tagline-size-desktop: 1.5rem;
+$h1-desktop: 2.25rem;
+$h2-desktop: 2rem;
+$h3-desktop: 1.75rem;
+$h4-desktop: 1.5rem;
+$h5-desktop: 1.25rem;
+$h6-desktop: 1.1rem;
+
+/* Padding */
+
+$padding: 1rem;
+$margins: 1.5rem;
+$content-padding: 60px 0;
+$content-padding-mobile: 30px 0;
+
+/* Borders */
+
+$border-width: 1px;
+$border-style: solid;
+$border-color: #sg-blue;
+$border-radius: 4px;
+$borders: $border-width $border-style $border-color;
+
+/* Buttons */
+
+$button-background: rgba($sg-pink, 0.5);
+$button-background-hover: $sg-purple-darker;
+$button-color: $sg-white;
+$button-font-weight: 400;
+$button-font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$button-font-size: 1.5rem;
+$button-border-width: 1px;
+$button-border-style: solid;
+$button-border-color: $sg-white;
+$button-border-radius: 8px;
+$button-text-transform: none;
+
+// Navigation
+
+$navigation-font-family: 'Roboto condensed', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$navigation-font-weight: 600;
+$navigation-font-size: 0.9rem;
+$navigation-item-padding: 1rem;
+$navigation-item-colour: $sg-white;
+
+// Accent buttons
+
+
+// Muted Buttons
+
+
+// Round Buttons
+$round-buttons: 40px;
+
+/* Forms */
+
+
+
+/* Tables */
+
+
+
+/* Code */

@@ -48,6 +48,7 @@ gulp.task('default', function(){
   livereload.listen();
     gulp.watch('./sass/**/*.scss', ['sass']);
     gulp.watch('./js/*.js', ['uglify']);
+    gulp.watch('templates/*.twig', ['uglify']);
     gulp.watch(['./css/style.css', './**/*.twig', './js_min/*.js'], function (files){
       livereload.changed(files)
     });

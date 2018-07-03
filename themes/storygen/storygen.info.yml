@@ -7,7 +7,9 @@ libraries:
 base theme: classy
 stylesheets-remove:
 regions:
+  navigation: 'Navigation'
   header: 'Header'
+  banner: 'Banner'
   content: 'Content'
   footer: 'Footer'
   copyright: 'Copyright'

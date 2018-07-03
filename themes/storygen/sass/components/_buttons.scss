@@ -1,0 +1,77 @@
+/* Buttons
+  =============== */
+
+// Main button styling
+%buttons {
+	-webkit-appearance: none;
+	display: inline-block;
+	border: $button-border-width $button-border-style $button-border-color;
+	border-radius: $button-border-radius;
+	background: $button-background;
+	color: $button-color;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+	font-weight: $button-font-weight;
+	font-family: $button-font-family;
+	font-size: $button-font-size;
+	text-transform: $button-text-transform;
+	padding: .5rem 1.75rem;
+	margin: 0 0 .5rem 0;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	line-height: 1;
+	transition: .3s background-color;
+}
+
+// Buttons on hover
+%buttons-hover {
+	border: $button-border-width $button-border-style darken($button-border-color, 10%);
+	//background: $button-background-hover;
+	color: $button-color;
+	text-decoration: none;
+	background-color: rgba($sg-black,0.2);
+}
+
+// Buttons on focus
+%buttons-focus {
+	border: $button-border-width $button-border-style darken($button-border-color, 10%);
+	background: $sg-pink-darker;
+	color: $button-color;
+	text-decoration: none;
+}
+
+// Apply styles to .button class, button element, and button-based inputs
+.button {
+	@extend %buttons;
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+	&:hover {
+		@extend %buttons-hover;
+	}
+	&:focus,
+	&:active {
+		@extend %buttons-focus;
+	}
+}
+
+// Round buttons
+.round-button,
+a.round-button {
+	border-radius: $round-buttons;
+}
+
+// Square buttons
+.square-button,
+a.square-button {
+	border-radius: 0;
+}
+
+// Full width buttons (block level)
+.full-button,
+a.full-button {
+	display: block;
+	width: 100%;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="sg-container">
+    <div class="sg-navbar">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="sg-header">
+      <div class="sg-header-topbar">
+        <div class="sg-header-links">
+        </div>
+      </div>
+      <div class="sg-header-main">
+        <div class="sg-header-logo-wordmark">
+          Storygen
+        </div>
+      </div>
+    </div>
+    <div class="sg-banner">
+      <div class="sg-banner-contents">
+        <div class="sg-banner-text">
+          <p class="banner-copy">You created your story using technology</p>
+          <p class="banner-copy">Now we'll tell it to those who matter</p><br />
+          <p class="banner-copy punchline">Welcome to a launchpad like no other</p><br />
+        </div>
+        <div class="sg-banner-button">
+          <input type="button" class="button" value="Contact us"/>
+        </div>
+      </div>
+    </div>
+    <div class="sg-content-container">
+      <h1>Passionate About Technology</h1>
+      <p>We love technology, and when we're not making headlines for our clients you'll find us tinkering with code, building VR applications, trading cryptocurrencies and calibrating our 3D printers.</p>
+      <p>We believe that our tech-centric background allows us to really understand what you do, and once we're interested in your story, we'll make it our mission to get your audience interested, too.</p>
+    </div>
+    <div class="sg-footer">
+      Copyright notice<br /><br />
+    </div>
+  </div>
+</body>
+
+</html>

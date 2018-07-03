@@ -27,7 +27,9 @@
  *   comment/reply/12345).
  *
  * Regions:
+ * - page.navigation: Items for the navbar region.
  * - page.header: Items for the header region.
+ * - page.banner: Items for the banner region.
  * - page.content: The main content of the current page.
  * - page.footer: Items for the footer region.
  * - page.copyright: A copyright notice at the bottom of the website.
@@ -39,20 +41,41 @@
 
 <div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
-
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-  </main>
-
-  <footer role="contentinfo">
+<div class="sg-container">
+  <div class="sg-header">
+    <div class="sg-header-topbar">
+      <div class="sg-header-links">
+      </div>
+    </div>
+    <div class="sg-header-main">
+      <div class="sg-header-logo-wordmark">
+        {{ page.header }}
+      </div>
+    </div>
+  </div>
+  <div class="sg-navbar">
+    {{ page.navigation }}
+  </div>
+  <div class="sg-banner-image">
+    <div class="sg-banner">
+      <div class="sg-banner-contents">
+        <div class="sg-banner-text">
+          <p class="banner-headline">Your story is tomorrow's news</p>
+          <p class="banner-tagline">You're creating a story using technology, we'll tell it to those who matter</p><br />
+        </div>
+        <div class="sg-banner-button">
+          <input type="button" class="button" value="Contact us"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sg-content-container">
+  <div class="layout-content">
+    {{ page.content }}
+  </div>{# /.layout-content #}
+  </div>
+  <div class="sg-footer">
     {{ page.footer }}
     {{ page.copyright }}
-  </footer>
-
+  </div>
 </div>{# /.layout-container #}

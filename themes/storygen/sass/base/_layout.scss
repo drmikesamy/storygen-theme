@@ -1,0 +1,122 @@
+/*
+<div class="sg-container">
+  <div class="sg-header">
+    <div class="sg-header-logo-image">
+
+    </div>
+    <div class="sg-header-logo-wordmark">
+
+    </div>
+  </div>
+  <div class="sg-banner">
+    <div class="sg-banner-text">
+
+    </div>
+    <div class="sg-banner-button">
+
+    </div>
+  </div>
+  <div class="sg-content-container">
+
+  </div>
+</div>
+<div class="sg-navbar">
+*/
+
+/* Basic Layout Blocks */
+
+.sg-container{
+
+}
+
+/* Header */
+
+.sg-header{
+  height: 250px;
+  background-color: $sg-purple;
+}
+
+.sg-header-topbar{
+  height: 25px;
+  max-width: 800px;
+  background-image: url('../logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+.sg-header-links{
+  margin-right: $padding;
+  margin-left: $padding;
+}
+
+.sg-header-main{
+  height: 225px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sg-header-logo-wordmark{
+  font-size: $site-name-size;
+  height: $site-name-size;
+  font-family: $logo-font;
+  color: $sg-white;
+}
+
+/* Banner */
+.sg-banner-image{
+  height:350px;
+  //background-image:url('../images/stars.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.sg-banner{
+  height: 350px;
+  //background: linear-gradient(90deg, rgba($sg-pink-darker,0.5), rgba($sg-yellow-darker,0.2) 40%, rgba($sg-yellow-darker,0.2) 60%, rgba($sg-blue-darker,0.5));
+  background: rgba($sg-pink, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $padding;
+}
+
+.sg-banner-contents{
+  text-align: center;
+}
+
+.sg-banner-text{
+
+}
+
+.sg-banner-button{
+}
+
+/* Content Area */
+
+.sg-content-container{
+  max-width: $medium-width;
+  margin: 0 auto;
+  padding: $padding;
+}
+
+/* Nav Bar Components */
+
+.sg-navbar{
+  //max-width: $medium-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $sg-purple;
+  //background-color: rgba($sg-white, 0.2);
+  //border-bottom: 1px solid rgba($navigation-item-colour, 0.3);
+}
+
+.sg-footer{
+  padding: $padding;
+  text-align: center;
+}

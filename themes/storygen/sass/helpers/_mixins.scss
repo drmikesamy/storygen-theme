@@ -1,0 +1,14 @@
+/* Mixins
+  =============== */
+
+@mixin small-breakpoint {
+	@media (min-width: #{$mobile}) {
+		@content;
+	}
+}
+
+@mixin large-breakpoint {
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
+}
