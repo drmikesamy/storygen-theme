@@ -1,0 +1,21 @@
+/* Modules
+  =============== */
+
+  // Team deck
+  .team-deck{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .team-deck-item{
+    width: 200px;
+    height: 100px;
+  }
+  .team-deck-photo{
+    border: 3px solid $sg-grey;
+    width: 200px;
+    height: 200px;
+  }
+  .team-deck-bio{
+
+  }

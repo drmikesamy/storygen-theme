@@ -57,6 +57,27 @@
 	}
 }
 
+.accent-button {
+	@extend %buttons;
+	background: $accent-button-background;
+	border-color: $accent-button-border-color;
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+	&:hover {
+		@extend %buttons-hover;
+		background: rgba($sg-purple, 0.5);
+		border-color: $accent-button-border-color;
+	}
+	&:focus,
+	&:active {
+		@extend %buttons-focus;
+		background: $accent-button-background;
+		border-color: $accent-button-border-color;
+	}
+}
+
 // Round buttons
 .round-button,
 a.round-button {

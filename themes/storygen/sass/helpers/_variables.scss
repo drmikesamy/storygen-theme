@@ -19,7 +19,7 @@ $desktop: $xlarge-width;
 /* Colour Scheme */
 
 $sg-white: #FFFFFF;
-$sg-black: #000000;
+$sg-black: #171717;
 
 $sg-purple: #1E0035;
 $sg-purple-lighter: lighten($sg-purple, 15%);
@@ -37,7 +37,7 @@ $sg-blue: #048BA8;
 $sg-blue-lighter: lighten($sg-blue, 15%);
 $sg-blue-darker: darken($sg-blue, 15%);
 
-$sg-grey: #2E4057;
+$sg-grey: #666666;
 $sg-grey-lighter: lighten($sg-grey, 15%);
 $sg-grey-darker: darken($sg-grey, 15%);
 
@@ -47,19 +47,20 @@ $body-background-colour: $sg-white;
 $primary-colour: $sg-purple;
 $secondary-colour: $sg-blue-lighter;
 $accent-colour: $sg-pink;
-$text-colour: $sg-grey;
+$text-colour: $sg-black;
 
 /* Typography */
 
 //Google Fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Open+Sans+Condensed:300,400,600|Raleway|Roboto+Condensed:300,400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Open+Sans+Condensed:300,400,600|Raleway|Lato);
 
 // Font Family Config
+
 $logo-font: 'Raleway', sans-serif;
 $site-name-colour: $sg-white;
-$heading-font: 'Open Sans', sans-serif;
-$heading-font-weight: 400;
-$heading-colour: $sg-grey-lighter;
+$heading-font: 'Lato', sans-serif;
+$heading-font-weight: 600;
+$heading-colour: $sg-black;
 $body-font: 'Open Sans', sans-serif;
 $body-font-weight: 400;
 $font-style: normal;
@@ -75,8 +76,8 @@ $body-line-height: 1.6rem;
 
 //Mobile Heading Font Sizes
 $site-name-size: 3.5rem;
-$banner-headline-size: 2.9rem;
-$banner-tagline-size: 1.3rem;
+$banner-headline-size: 2rem;
+$banner-tagline-size: 1rem;
 $h1: 1.75rem;
 $h2: 1.5rem;
 $h3: 1.25rem;
@@ -86,8 +87,8 @@ $h6: 0.9rem;
 
 //Tablet Heading Font Sizes
 $site-name-size-tablet: 3.75rem;
-$banner-headline-size-tablet: 3rem;
-$banner-tagline-size-tablet: 1.5rem;
+$banner-headline-size-tablet: 2.5rem;
+$banner-tagline-size-tablet: 1.2rem;
 $h1-tablet: 2rem;
 $h2-tablet: 1.75rem;
 $h3-tablet: 1.5rem;
@@ -121,30 +122,37 @@ $border-color: #sg-blue;
 $border-radius: 4px;
 $borders: $border-width $border-style $border-color;
 
+// Navigation
+
+$navigation-font-family: 'Roboto condensed', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$navigation-font-weight: 600;
+$navigation-font-size: 0.6rem;
+$navigation-font-size-tablet: 0.8rem;
+$navigation-font-size-desktop: 0.9rem;
+$navigation-item-padding: 0.2rem 0.6rem;
+$navigation-item-padding-tablet: 0.2rem 0.8rem;
+$navigation-item-padding-desktop: 0.2rem 1rem;
+$navigation-item-colour: $sg-white;
+
 /* Buttons */
 
-$button-background: rgba($sg-pink, 0.5);
-$button-background-hover: $sg-purple-darker;
+$button-background: rgba($sg-yellow, 1);
+$button-background-hover: $sg-yellow-lighter;
 $button-color: $sg-white;
 $button-font-weight: 400;
 $button-font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
 $button-font-size: 1.5rem;
 $button-border-width: 1px;
 $button-border-style: solid;
-$button-border-color: $sg-white;
+$button-border-color: $sg-yellow-darker;
 $button-border-radius: 8px;
 $button-text-transform: none;
 
-// Navigation
-
-$navigation-font-family: 'Roboto condensed', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-$navigation-font-weight: 600;
-$navigation-font-size: 0.9rem;
-$navigation-item-padding: 1rem;
-$navigation-item-colour: $sg-white;
-
 // Accent buttons
 
+$accent-button-background: $sg-pink;
+$accent-button-background-hover: $sg-purple;
+$accent-button-border-color: $sg-white;
 
 // Muted Buttons
 
@@ -161,3 +169,6 @@ $round-buttons: 40px;
 
 
 /* Code */
+
+/* Footer */
+$footer-text-size: 0.8rem;

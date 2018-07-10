@@ -1,0 +1,69 @@
+/* TEAMDECK */
+
+.view-teamdeck{
+  .view-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .views-row{
+    width: 100%;
+    box-sizing: border-box;
+    //background: #e0ddd5;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  @include small-breakpoint {
+    .views-row{
+      flex: 1 0 calc(50% - 10px);
+      box-sizing: border-box;
+      //background: #e0ddd5;
+      padding: 10px;
+    }
+  }
+
+  @include large-breakpoint {
+    .views-row{
+      flex: 1 0 calc(25% - 10px);
+      box-sizing: border-box;
+      //background: #e0ddd5;
+      padding: 10px;
+    }
+  }
+
+  .views-field-field-name-of-member{
+    color: $sg-black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .views-field-field-position{
+    text-transform: uppercase;
+    color: $sg-grey-lighter;
+    font-size: 0.7rem;
+  }
+  .views-field-field-bio{
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  .views-field-field-social-media-links {
+    span{
+      color: $sg-pink;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+/* BLOG */
+
+.view-blog-page{
+  .node__submitted{
+    text-transform: uppercase;
+  }
+}
