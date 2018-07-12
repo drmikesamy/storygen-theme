@@ -7,12 +7,12 @@
 /* Header */
 
 .sg-header{
-  height: 200px;
+  height: 160px;
   background-color: $sg-purple;
 }
 
 .sg-header-topbar{
-  height: 25px;
+  height: 20px;
   max-width: 800px;
   background-image: url('../logo.svg');
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 }
 
 .sg-header-main{
-  height: 175px;
+  height: 140px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -55,8 +55,6 @@
 
 .sg-banner-contents{
   text-align: center;
-  padding-top: $padding;
-  padding-bottom: $padding;
 }
 
 .sg-banner-text{
@@ -104,6 +102,10 @@
   .sg-banner-contents{
     padding-top: $padding*1.5;
     padding-bottom: $padding*1.5;
+  }
+  .sg-header-topbar{
+    height: 25px;
+    max-width: 800px;
   }
 }
 
