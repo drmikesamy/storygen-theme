@@ -7,8 +7,9 @@
   }
 
   img{
-    width: 200px;
-    height: 200px;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .views-row{
@@ -36,6 +37,10 @@
       padding: 10px;
     }
   }
+
+    .views-field-field-team-member-photo{
+
+    }
 
   .views-field-field-name-of-member{
     color: $sg-black;
