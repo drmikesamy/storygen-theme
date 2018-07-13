@@ -86,12 +86,6 @@ h6 {
   background-color: rgba($sg-blue,0.5);
 }
 
-.menu-item a.active {
-  background-color: #fff;
-  color: $sg-white;
-  cursor: default;
-}
-
 .site-name{
   a{
     font-size: $site-name-size;
