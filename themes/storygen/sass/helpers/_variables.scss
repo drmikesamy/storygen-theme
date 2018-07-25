@@ -7,14 +7,14 @@
 /* Containers */
 
 $small-width: 600px;
-$medium-width: 1000px;
-$large-width: 1000px;
-$xlarge-width: 1200px;
+$medium-width: 900px;
+$large-width: 1200px;
+$xlarge-width: 1800px;
 
 /* Breakpoints */
 
 $mobile: $small-width;
-$desktop: $xlarge-width;
+$desktop: $medium-width;
 
 /* Colour Scheme */
 
@@ -30,7 +30,7 @@ $sg-pink-lighter: lighten($sg-pink, 15%);
 $sg-pink-darker: darken($sg-pink, 15%);
 
 $sg-yellow: #F18F01;
-$sg-yellow-lighter: lighten($sg-yellow, 15%);
+$sg-yellow-lighter: rgba($sg-yellow, 0.6);
 $sg-yellow-darker: darken($sg-yellow, 15%);
 
 $sg-blue: #048BA8;
@@ -145,7 +145,7 @@ $button-font-size: 1.5rem;
 $button-border-width: 1px;
 $button-border-style: solid;
 $button-border-color: $sg-yellow-darker;
-$button-border-radius: 8px;
+$button-border-radius: 20px;
 $button-text-transform: none;
 
 // Accent buttons

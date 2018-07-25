@@ -75,7 +75,7 @@ h6 {
   font-weight: $navigation-font-weight;
   font-size: $navigation-font-size;
   color: rgba($navigation-item-colour, 1);
-  text-transform: uppercase;
+  //text-transform: uppercase;
   text-decoration: none;
   display: block;
   transition: .3s background-color;
@@ -86,11 +86,11 @@ h6 {
   background-color: rgba($sg-blue,0.5);
 }
 
-.menu-item a:active {
+.menu-item a:focus {
   color: $sg-white;
 }
 
-.menu-item a.is-active {
+.menu-item--active-trail {
   color: $sg-white;
 }
 

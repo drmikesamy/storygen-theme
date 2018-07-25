@@ -7,9 +7,12 @@
   }
 
   img{
-    display: block;
+    display: inline;
     width: 100%;
     height: auto;
+    max-width: 300px;
+    //border: 10px solid $sg-grey-lighter;
+    //box-shadow: 0px 0px 4px rgba($sg-black, 0.4);
   }
 
   .views-row{
@@ -26,6 +29,7 @@
       box-sizing: border-box;
       //background: #e0ddd5;
       padding: 10px;
+      //max-width: 250px;
     }
   }
 
@@ -35,11 +39,15 @@
       box-sizing: border-box;
       //background: #e0ddd5;
       padding: 10px;
+      max-width: 100%;
     }
   }
 
     .views-field-field-team-member-photo{
-
+      .field-content{
+        text-align: center;
+        //background-color: $sg-black;
+      }
     }
 
   .views-field-field-name-of-member{
@@ -47,20 +55,36 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-top: 10px;
+    .field-content{
+      text-align: center;
+    }
   }
   .views-field-field-position{
     text-transform: uppercase;
     color: $sg-grey-lighter;
     font-size: 0.7rem;
+    .field-content{
+      text-align: center;
+    }
+    margin-bottom: 10px;
   }
   .views-field-field-bio{
     font-size: 0.9rem;
     margin-top: 5px;
   }
   .views-field-field-social-media-links {
+    .field-content{
+      margin: 0px;
+      width: 100%;
+      background-color: $sg-yellow-lighter;
+      text-align: center;
+    }
     span{
-      color: $sg-pink;
-      font-size: 1.6rem;
+      color: $sg-white;
+      font-size: 1.3rem;
+      margin-left: 5px;
+      margin-right: 5px;
+      display: inline-block;
     }
   }
 }
