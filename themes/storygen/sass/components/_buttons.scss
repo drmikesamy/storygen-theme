@@ -14,13 +14,13 @@
 	font-family: $button-font-family;
 	font-size: $button-font-size;
 	text-transform: $button-text-transform;
-	padding: .5rem 1.75rem;
-	margin: 0 0 .5rem 0;
+	padding: .3rem 1.75rem;
+	margin: 0 0 0 0;
 	vertical-align: middle;
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
-	line-height: 1;
+	//line-height: 1;
 	transition: .3s background-color;
 }
 

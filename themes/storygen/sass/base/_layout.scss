@@ -50,11 +50,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: $padding;
+  padding: 2px;
 }
 
 .sg-banner-contents{
   text-align: center;
+  padding-top: $padding;
+  padding-bottom: $padding;
 }
 
 .sg-banner-text{
@@ -62,6 +64,7 @@
 }
 
 .sg-banner-button{
+  padding: 10px;
 }
 
 /* Content Area */
@@ -80,12 +83,28 @@
   align-items: center;
   justify-content: center;
   background-color: $sg-purple;
-  padding-right: 1rem;
+  //padding-right: 1rem;
   overflow-x: auto;
   overflow-y: hidden;
   //border-top: 1px solid rgba($sg-yellow, 0.8);
   //background: rgba($sg-yellow, 1);
-  border-bottom: 3px solid $sg-pink-darker;
+  border-bottom: 3px solid $sg-pink;
+  //text-align: center;
+  ul{
+    margin: 0rem;
+  }
+  .region-navigation{
+    height: 100%;
+  }
+}
+
+.sticky {
+position: fixed;
+width: 100%;
+left: 0;
+top: 0;
+z-index: 100;
+border-top: 0;
 }
 
 .sg-footer{
@@ -101,8 +120,8 @@
     height: 200px;
   }
   .sg-banner-contents{
-    padding-top: $padding*1.5;
-    padding-bottom: $padding*1.5;
+    padding-top: $padding*2;
+    padding-bottom: $padding*2;
   }
   .sg-header-topbar{
     height: 25px;
@@ -118,7 +137,7 @@
     height: 225px;
   }
   .sg-banner-contents{
-    padding-top: $padding*2;
-    padding-bottom: $padding*2;
+    padding-top: $padding*2.5;
+    padding-bottom: $padding*2.5;
   }
 }

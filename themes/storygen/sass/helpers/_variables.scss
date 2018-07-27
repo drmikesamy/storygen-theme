@@ -124,12 +124,12 @@ $borders: $border-width $border-style $border-color;
 
 // Navigation
 
-$navigation-font-family: 'Roboto condensed', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-$navigation-font-weight: 600;
-$navigation-font-size: 0.6rem;
-$navigation-font-size-tablet: 0.8rem;
-$navigation-font-size-desktop: 0.9rem;
-$navigation-item-padding: 0.2rem 0.6rem;
+$navigation-font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$navigation-font-weight: 400;
+$navigation-font-size: 0.8rem;
+$navigation-font-size-tablet: 1rem;
+$navigation-font-size-desktop: 1rem;
+$navigation-item-padding: 0.2rem 1rem;
 $navigation-item-padding-tablet: 0.2rem 0.8rem;
 $navigation-item-padding-desktop: 0.2rem 1rem;
 $navigation-item-colour: $sg-white;
@@ -141,7 +141,7 @@ $button-background-hover: $sg-yellow-lighter;
 $button-color: $sg-white;
 $button-font-weight: 400;
 $button-font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-$button-font-size: 1.5rem;
+$button-font-size: 1.2rem;
 $button-border-width: 1px;
 $button-border-style: solid;
 $button-border-color: $sg-yellow-darker;

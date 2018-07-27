@@ -12,7 +12,7 @@ ol,
 ul,
 dl,
 table {
-	margin: 0 0 $margins 0;
+	margin: 0 0 0 0;
 }
 
 ul li ul {
@@ -68,6 +68,7 @@ h6 {
 }
 .menu-item {
   display: inline-block;
+  padding: $navigation-item-padding;
 }
 
 .menu-item a {
@@ -79,11 +80,14 @@ h6 {
   text-decoration: none;
   display: block;
   transition: .3s background-color;
-  padding: $navigation-item-padding;
+  //padding: $navigation-item-padding;
+  //padding: 0px;
 }
 
 .menu-item a:hover {
-  background-color: rgba($sg-blue,0.5);
+  text-decoration: underline;
+  text-decoration-color: $sg-pink;
+  text-decoration-style: dotted;
 }
 
 .menu-item a:focus {
@@ -92,6 +96,7 @@ h6 {
 
 .menu-item--active-trail {
   color: $sg-white;
+  background: $sg-pink;
 }
 
 .menu-item a:visited {
@@ -132,15 +137,16 @@ h6 {
   font-family: $heading-font;
   font-size: $banner-headline-size;
 	font-weight: 400;
-  line-height: $banner-headline-size*1.2;
+  padding: 10px;
+  line-height: $banner-headline-size;
   text-shadow: 2px 2px 2px rgba($sg-black, 0.4);
 }
 .banner-tagline{
 	color: $sg-white;
   font-family: $heading-font;
   font-size: $banner-tagline-size;
-  line-height: $banner-tagline-size*1.2;
-  margin: 20px;
+  line-height: $banner-tagline-size;
+  padding: 10px;
   text-shadow: 2px 2px 2px rgba($sg-black, 0.4);
 }
 
@@ -174,7 +180,7 @@ h6 {
       font-size: $site-name-size-tablet;
     }
   }
-  .menu-item a {
+  .menu-item {
     font-size: $navigation-font-size-tablet;
     padding: $navigation-item-padding-tablet;
   }
