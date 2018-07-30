@@ -103,6 +103,10 @@ h6 {
   color: $sg-white;
 }
 
+ul.menu a.is-active {
+    color: #fff;
+}
+
 .site-name{
   a{
     font-size: $site-name-size;

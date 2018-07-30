@@ -18,6 +18,3 @@ ul.inline li {
   list-style-type: none;
   padding: 0 0.5em;
 }
-ul.links a.is-active {
-  color: #000;
-}
