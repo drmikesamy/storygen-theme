@@ -1,0 +1,24 @@
+<a href="{{ url }}">
+<div class="sg-teaser-container">
+{% if content.field_image|render is not empty %}
+  <div class="sg-teaser-image" style="background-image:url('{{ file_url(node.field_image.entity.fileuri) }}');">
+  </div>
+{% endif %}
+  <div class="sg-teaser-content">
+  <div class="sg-teaser-detailsline">
+    {{ content.field_category.0 }}
+  </div>
+  <div class="sg-teaser-title">
+    <h2{{ title_attributes.addClass('node__title') }}>
+      {{ label }}
+    </h2>
+  </div>
+  <div class="sg-teaser-body">
+    {{ content.body }}
+  </div>
+  <div class="sg-teaser-timestamp">
+    {{ node.created.value|date('l F j, Y') }}
+  </div>
+  </div>
+</div>
+</a>

@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
   			    if (scrollTop > stickyNavTop) {
   			        $('.sg-navbar').addClass('sticky');
   			    } else {
-  			        $('.sg-navbar').removeClass('sticky'); 
+  			        $('.sg-navbar').removeClass('sticky');
   			    }
   			};
 
@@ -20,4 +20,5 @@ jQuery(document).ready(function($) {
   			$(window).scroll(function() {
   				stickyNav();
   			});
+
 })

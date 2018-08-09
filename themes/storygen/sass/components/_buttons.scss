@@ -9,7 +9,6 @@
 	border-radius: $button-border-radius;
 	background: $button-background;
 	color: $button-color;
-	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
 	font-weight: $button-font-weight;
 	font-family: $button-font-family;
 	font-size: $button-font-size;
@@ -22,6 +21,7 @@
 	text-decoration: none;
 	//line-height: 1;
 	transition: .3s background-color;
+	margin: 0.1rem;
 }
 
 // Buttons on hover

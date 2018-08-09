@@ -4,23 +4,28 @@
   .view-content{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   img{
     display: inline;
     width: 100%;
     height: auto;
-    max-width: 300px;
+    //max-width: 300px;
     //border: 10px solid $sg-grey-lighter;
     //box-shadow: 0px 0px 4px rgba($sg-black, 0.4);
   }
 
   .views-row{
     width: 100%;
+    max-width: 300px;
     box-sizing: border-box;
     //background: #e0ddd5;
-    padding: 10px;
+    //padding: 10px;
+    margin: 0px;
     margin-bottom: 20px;
+    box-shadow: 1px 1px 2px $sg-grey-lighter;
+    border:1px solid $sg-grey-lighter;
   }
 
   @include small-breakpoint {
@@ -28,7 +33,7 @@
       flex: 1 0 calc(50% - 10px);
       box-sizing: border-box;
       //background: #e0ddd5;
-      padding: 10px;
+      //padding: 10px;
       //max-width: 250px;
     }
   }
@@ -38,21 +43,21 @@
       flex: 1 0 calc(25% - 10px);
       box-sizing: border-box;
       //background: #e0ddd5;
-      padding: 10px;
+      //padding: 10px;
       max-width: 100%;
     }
   }
 
-    .views-field-field-team-member-photo{
-      .field-content{
-        text-align: center;
-        //background-color: $sg-black;
-      }
+  .views-field-field-team-member-photo{
+    .field-content{
+      text-align: center;
+      //background-color: $sg-black;
     }
+  }
 
   .views-field-field-name-of-member{
     color: $sg-black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-top: 10px;
     .field-content{
@@ -61,7 +66,7 @@
   }
   .views-field-field-position{
     text-transform: uppercase;
-    color: $sg-grey-lighter;
+    color: $sg-pink;
     font-size: 0.7rem;
     .field-content{
       text-align: center;
@@ -69,8 +74,9 @@
     margin-bottom: 10px;
   }
   .views-field-field-bio{
-    font-size: 0.9rem;
-    margin-top: 5px;
+    font-size: 0.8rem;
+    padding:10px;
+    line-height: normal;
   }
   .views-field-field-social-media-links {
     .field-content{
@@ -89,10 +95,250 @@
   }
 }
 
-/* BLOG */
-
-.view-blog-page{
-  .node__submitted{
-    text-transform: uppercase;
+/* BLOG FILTER */
+.menu--blog-page-menu{
+  .menu {
+    list-style: none;
+    margin-bottom: 10px;
   }
+  .menu-item {
+    display: inline-block;
+    padding: 0rem 0rem;
+    margin: 0rem;
+  }
+
+  .menu-item a {
+    font-family: $navigation-font-family;
+    font-weight: $navigation-font-weight;
+    font-size: 0.7rem;
+    color: rgba($navigation-item-color, 1);
+    text-decoration: none;
+    background: $sg-grey;
+    text-align: center;
+    padding: 0.3rem 0.4rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+
+  .menu-item a:hover {
+  }
+
+  .menu-item a:focus {
+    color: $sg-white;
+  }
+
+  .menu-item--active-trail a {
+    background: $sg-pink;
+  }
+
+  .menu-item a:visited {
+    color: $sg-white;
+  }
+
+  ul.menu{
+    padding: 0rem;
+  }
+
+  ul.menu a.is-active {
+      color: #fff;
+  }
+}
+
+/* BLOG TEASER */
+.view-blog-page, .view-taxonomy-term{
+
+  .node__title{
+    margin: 0;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+  }
+
+  p{
+    font-size: 0.9rem;
+    line-height: normal;
+  }
+
+  a{
+    color: $sg-black;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  .sg-teaser-container{
+    width: 100%;
+    box-sizing: border-box;
+    border:1px solid $sg-grey-lighter;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 2px $sg-grey-lighter;
+  }
+
+  .sg-teaser-image{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  .sg-teaser-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+  }
+  .sg-teaser-detailsline{
+      text-transform: uppercase;
+      color: $sg-pink;
+      font-size: 0.7rem;
+      margin-bottom: 5px;
+  }
+  .sg-teaser-timestamp{
+    color: $sg-grey;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+
+  @include small-breakpoint {
+    .node__title{
+      margin: 0;
+      margin-bottom: 0.6rem;
+      font-size: 1.4rem;
+    }
+
+    p{
+      font-size: 1rem;
+      line-height: normal;
+    }
+    .sg-teaser-container{
+        flex-direction: row;
+    }
+    .sg-teaser-image{
+      flex: none;
+      width: 275px;
+      height: 250px;
+    }
+    .sg-teaser-content{
+      justify-content: center;
+      padding: 1.8rem;
+    }
+  }
+
+  @include large-breakpoint {
+    .node__title{
+      margin: 0;
+      margin-bottom: 0.6rem;
+      font-size: 1.5rem;
+    }
+
+    p{
+      font-size: 1.1rem;
+      line-height: normal;
+    }
+    .sg-teaser-image{
+      flex: none;
+      width: 350px;
+      height: 275px;
+    }
+    .sg-teaser-content{
+      padding: 3rem;
+    }
+  }
+
+}
+
+/*FULL BLOG */
+
+.sg-article-container{
+
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  a{
+    color: $sg-black;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  .sg-article-image{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $sg-grey-lighter;
+  }
+  .sg-article-content{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .sg-article-detailsline{
+      text-transform: uppercase;
+      color: $sg-pink;
+      font-size: 0.7rem;
+      margin-bottom: 5px;
+  }
+  .sg-article-timestamp{
+    color: $sg-grey;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  @include small-breakpoint {
+    .node__title{
+      margin: 0;
+      margin-bottom: 0.6rem;
+      font-size: 1.4rem;
+    }
+
+    p{
+      font-size: 1rem;
+      line-height: normal;
+    }
+    .sg-article-container{
+        flex-direction: row;
+    }
+    .sg-article-image{
+      flex: none;
+      width: 275px;
+      height: 250px;
+    }
+    .sg-article-content{
+      justify-content: center;
+      padding: 1.8rem;
+    }
+  }
+
+  @include large-breakpoint {
+    .node__title{
+      margin: 0;
+      margin-bottom: 0.6rem;
+      font-size: 1.5rem;
+    }
+
+    p{
+      font-size: 1.1rem;
+      line-height: normal;
+    }
+    .sg-article-image{
+      flex: none;
+      width: 350px;
+      height: 275px;
+    }
+    .sg-article-content{
+      padding: 3rem;
+    }
+  }
+
+}
+
+//Contact form
+
+.contact-form{
+
 }

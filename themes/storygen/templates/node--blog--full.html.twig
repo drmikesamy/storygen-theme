@@ -1,0 +1,19 @@
+<div class="sg-article-container">
+{% if content.field_image|render is not empty %}
+  <div class="sg-article-image" style="background-image:url('{{ file_url(node.field_image.entity.fileuri) }}');">
+  </div>
+{% endif %}
+  <div class="sg-article-content">
+  <div class="sg-article-title">
+    <h2{{ title_attributes.addClass('node__title') }}>
+      {{ label }}
+    </h2>
+  </div>
+  <div class="sg-article-timestamp">
+    {{ node.created.value|date('l F j, Y') }}
+  </div>
+  <div class="sg-article-body">
+    {{ content.body }}
+  </div>
+  </div>
+</div>

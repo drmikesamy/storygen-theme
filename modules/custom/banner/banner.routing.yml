@@ -1,7 +1,0 @@
-banner.content:
-  path: '/display_banner'
-  defaults:
-    _title: 'Banner with Headline, Tagline and Button'
-    _controller: '\Drupal\banner\Controller\BannerController::content'
-  requirements:
-    _permission: 'access content'

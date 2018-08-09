@@ -9,6 +9,7 @@
 .sg-header{
   height: 160px;
   background-color: $sg-purple;
+  background-size: cover;
 }
 
 .sg-header-topbar{
@@ -84,8 +85,6 @@
   justify-content: center;
   background-color: $sg-purple;
   //padding-right: 1rem;
-  overflow-x: auto;
-  overflow-y: hidden;
   //border-top: 1px solid rgba($sg-yellow, 0.8);
   //background: rgba($sg-yellow, 1);
   border-bottom: 3px solid $sg-pink;
@@ -96,6 +95,8 @@
   .region-navigation{
     height: 100%;
   }
+  overflow: auto;
+white-space: nowrap;
 }
 
 .sticky {
