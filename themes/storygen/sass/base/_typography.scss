@@ -7,12 +7,16 @@
   color: $sg-white;
 }
 
-p,
 ol,
 ul,
 dl,
 table {
 	margin: 0 0 0 0;
+}
+
+p{
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 ul li ul {
@@ -190,10 +194,13 @@ h6 {
       font-size: $site-name-size-tablet;
     }
   }
-  .menu-item a {
-    font-size: $navigation-font-size-tablet;
-    padding: $navigation-item-padding-tablet;
+  .sg-navbar{
+    .menu-item a {
+      font-size: $navigation-font-size-tablet;
+      padding: $navigation-item-padding-tablet;
+    }
   }
+
   .banner-headline{
     font-size: $banner-headline-size-tablet;
   }
@@ -232,9 +239,11 @@ h6 {
       font-size: $site-name-size-desktop;
     }
   }
-  .menu-item a {
-    font-size: $navigation-font-size-desktop;
-    padding: $navigation-item-padding-desktop;
+  .sg-navbar{
+    .menu-item a {
+      font-size: $navigation-font-size-desktop;
+      padding: $navigation-item-padding-desktop;
+    }
   }
 	.banner-headline{
     font-size: $banner-headline-size-desktop;

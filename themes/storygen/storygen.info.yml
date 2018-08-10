@@ -14,7 +14,3 @@ regions:
   footer: 'Footer'
   copyright: 'Copyright'
 libraries-override:
-  classy/base:
-    css:
-      component:
-        css/components/menu.css: css/style.css
