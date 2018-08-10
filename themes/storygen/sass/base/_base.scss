@@ -25,3 +25,12 @@ body {
 			font-size: $body-font-size*1.2;
 	}
 }
+
+//IE compatibility
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .view-teamdeck{
+		 .views-row{
+			 max-width: 20%;
+		 }
+	 }
+}
