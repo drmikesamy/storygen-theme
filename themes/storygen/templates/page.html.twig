@@ -29,6 +29,7 @@
  * Regions:
  * - page.navigation: Items for the navbar region.
  * - page.header: Items for the header region.
+ * - page.subnav: Items for the subnav region.
  * - page.banner: Items for the banner region.
  * - page.content: The main content of the current page.
  * - page.footer: Items for the footer region.
@@ -53,8 +54,13 @@
       </div>
     </div>
   </div>
+  <div class="sg-nav-container">
   <div class="sg-navbar">
     {{ page.navigation }}
+  </div>
+  <div class="sg-subnav">
+    {{ page.subnav }}
+  </div>
   </div>
     {{ page.banner }}
   <div class="sg-content-container">

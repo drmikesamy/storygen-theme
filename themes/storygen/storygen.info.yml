@@ -6,9 +6,11 @@ libraries:
   - storygen/global
 base theme: classy
 stylesheets-remove:
+  - 'modules/social_media_links/css/social_media_links.theme.css'
 regions:
   navigation: 'Navigation'
   header: 'Header'
+  subnav: 'Sub Navigation'
   banner: 'Banner'
   content: 'Content'
   footer: 'Footer'

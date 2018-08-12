@@ -55,12 +55,10 @@ display: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px;
 }
 
 .sg-banner-contents{
   text-align: center;
-  padding-top: $padding;
   padding-bottom: $padding;
 }
 
@@ -81,7 +79,6 @@ display: none;
 }
 
 /* Nav Bar Components */
-
 .sg-navbar{
   //max-width: $medium-width;
   display: flex;
@@ -91,7 +88,6 @@ display: none;
   //padding-right: 1rem;
   //border-top: 1px solid rgba($sg-yellow, 0.8);
   //background: rgba($sg-yellow, 1);
-  border-bottom: 3px solid $sg-pink;
   //text-align: center;
   ul{
     margin: 0rem;
@@ -101,6 +97,10 @@ display: none;
   }
   overflow: auto;
 white-space: nowrap;
+}
+.sg-subnav{
+  background-color: $sg-pink;
+  padding: 2px;
 }
 
 .sticky {

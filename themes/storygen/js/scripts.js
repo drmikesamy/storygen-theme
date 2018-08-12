@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
   			// grab the initial top offset of the navigation
-  		   	var stickyNavTop = $('.sg-navbar').offset().top;
+  		   	var stickyNavTop = $('.sg-nav-container').offset().top;
+          var navHeight = $('.sg-nav-container').height();
 
   		   	// our function that decides weather the navigation bar should have "fixed" css position or not.
   		   	var stickyNav = function(){
@@ -9,9 +10,11 @@ jQuery(document).ready(function($) {
   			    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
   			    // otherwise change it back to relative
   			    if (scrollTop > stickyNavTop) {
-  			        $('.sg-navbar').addClass('sticky');
+  			        $('.sg-nav-container').addClass('sticky');
+                $('.layout-container').css('margin-top',navHeight);
   			    } else {
-  			        $('.sg-navbar').removeClass('sticky');
+  			        $('.sg-nav-container').removeClass('sticky');
+                $('.layout-container').css('margin-top',0);
   			    }
   			};
 
@@ -20,5 +23,4 @@ jQuery(document).ready(function($) {
   			$(window).scroll(function() {
   				stickyNav();
   			});
-
 })

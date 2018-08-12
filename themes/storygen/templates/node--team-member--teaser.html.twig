@@ -1,0 +1,19 @@
+<div class="sg-team-member-container">
+<a name="{{ node.id }}"></a>
+  {% if content.field_team_member_photo|render is not empty %}
+    <div class="sg-team-member-photo" style="background-image:url('{{ file_url(node.field_team_member_photo.entity.fileuri) }}');">
+    </div>
+  {% endif %}
+  <div class="sg-team-member-name">
+      {{ content.field_name_of_member }}
+  </div>
+  <div class="sg-team-member-position">
+      {{ content.field_position }}
+  </div>
+  <span class="sg-team-member-social-media">
+      {{ content.field_social_media_links }}
+  </span>
+  <div class="sg-team-member-bio">
+      {{ content.field_bio }}
+  </div>
+</div>
