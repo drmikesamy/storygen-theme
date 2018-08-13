@@ -98,9 +98,29 @@ display: none;
   overflow: auto;
 white-space: nowrap;
 }
+
 .sg-subnav{
   background-color: $sg-pink;
   padding: 2px;
+}
+
+.menu--blog-page-menu{
+  //.sg-subnav{
+    background-color: $sg-pink;
+    padding: 2px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      background-image: linear-gradient(to right, rgba(255,255,255,0), $sg-pink);
+      width: 15%;
+    }
+//  }
 }
 
 .sticky {

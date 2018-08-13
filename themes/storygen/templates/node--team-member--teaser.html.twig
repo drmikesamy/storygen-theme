@@ -1,5 +1,4 @@
-<div class="sg-team-member-container">
-<a name="{{ node.id }}"></a>
+<div class="sg-team-member-container" id="team-member-{{ node.id }}">
   {% if content.field_team_member_photo|render is not empty %}
     <div class="sg-team-member-photo" style="background-image:url('{{ file_url(node.field_team_member_photo.entity.fileuri) }}');">
     </div>

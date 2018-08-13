@@ -252,16 +252,15 @@
   display: flex;
   justify-content: center;
   .sg-about-icon-single{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 5px;
   }
   .sg-about-icon-avatar{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-size: cover;
-    border-radius: 32px;
+    background-position: center;
+    border-radius: 30px;
+    //border-radius: 32px;
     //border: 1px solid $sg-white;
   }
   a, a:visited {
@@ -322,4 +321,12 @@
 
 .contact-form{
 
+}
+
+// GLOBAL RULES
+
+@include small-breakpoint {
+  .sg-about-icon-deck{
+    display: none;
+  }
 }
